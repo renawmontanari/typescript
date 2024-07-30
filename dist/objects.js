@@ -6,6 +6,9 @@ const user = {
     email: 'jane@gmail.com',
     password: '123456',
     orders: [{ productId: "1", price: 200 }],
+    register() {
+        return "Welcome";
+    }
 };
 const printLog = (message) => { };
 printLog(user.password);
@@ -19,13 +22,22 @@ const author = {
     email: 'jane@gmail.com',
     password: '123456',
     orders: [{ productId: "1", price: 200 }],
+    register() {
+        return "Welcome";
+    }
 };
 const emailUser = {
     email: 'jane@jane.com',
-    firstName: 'Jane'
+    firstName: 'Jane',
+    login() {
+        return "Welcome";
+    },
 };
 const newAuthor = {
     email: 'jane@gmail.com',
     firstName: 'Jane',
-    books: ['books', 'books']
+    books: ['books', 'books'],
+    login() {
+        return "Welcome";
+    },
 };
